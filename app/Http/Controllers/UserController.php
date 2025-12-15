@@ -6,6 +6,7 @@ use App\Models\User;
 use Laravel\Mcp\Enums\Role;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
