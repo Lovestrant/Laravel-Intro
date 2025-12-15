@@ -1,6 +1,6 @@
 In Laravel, the command to run migrations is:
 
-*** php artisan migrate ***
+`php artisan migrate`
 
 Common migration-related commands you might need
 
@@ -8,43 +8,43 @@ Since you’ve worked with migrations before, these are especially useful:
 
 Run fresh migrations (drop all tables and re-run):
 
-*** php artisan migrate:fresh ***
+`php artisan migrate:fresh`
 
 
 Rollback the last batch of migrations:
 
-*** php artisan migrate:rollback ***
+` php artisan migrate:rollback `
 
 
 Rollback all migrations:
 
-*** php artisan migrate:reset ***
+` php artisan migrate:reset `
 
 
 Rollback and re-run migrations:
 
-*** php artisan migrate:refresh ***
+` php artisan migrate:refresh `
 
 
 Run migrations with seeders:
 
-*** php artisan migrate --seed ***
+` php artisan migrate --seed `
 
 
 Check migration status:
 
-*** php artisan migrate:status ***
+` php artisan migrate:status `
 
 - Database uses eloquent ORM
 A Model in Laravel represents a database table and is used to interact with it.
 
 Example
-*** php artisan make:model Product ***
+` php artisan make:model Product `
 
 
 This creates:
 
-*** app/Models/Product.php ***
+` app/Models/Product.php `
 
 class Product extends Model
 {
@@ -56,7 +56,7 @@ class Product extends Model
 When creating database tables, you almost always do:
 This createa Model and creates migrations, but you still have to run that migration
 
-*** php artisan make:model Product -m ***
+` php artisan make:model Product -m `
 
 # FACTORIES USAGE
 Factories are used to define how dummy data that will be fed to the db with the help of seeders should look like
@@ -81,4 +81,4 @@ CustomerSeeder.php → seeds customers
 InvoiceSeeder.php → seeds invoices
 
 2️⃣ Creating a seeder
-*** php artisan make:seeder CustomerSeeder ***
+` php artisan make:seeder CustomerSeeder `
