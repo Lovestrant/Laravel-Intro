@@ -10,6 +10,15 @@ class Customer extends Model
     /** @use HasFactory<\Database\Factories\CustomerFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'type',
+        'email',
+        'address',
+        'city',
+        'postal_code',
+    ];
+    
     // Add relationship to invoices
     public function invoices()
     {
